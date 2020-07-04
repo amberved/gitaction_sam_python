@@ -34,15 +34,14 @@ def lambda_handler(event, context):
 
     #     raise e
 
-    file1 = open('myfile.txt', 'r') 
+    file1 = open('hello.txt', 'r') 
     Lines = file1.readlines() 
 
-    aline
+    aline = "dummy"
 
     # Strips the newline character 
     for line in Lines:
        aline = line.strip()
-       count += 10
 
     return {
         "statusCode": 200,
