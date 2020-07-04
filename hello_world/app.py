@@ -18,6 +18,7 @@ def lambda_handler(event, context):
 
         Context doc: https://docs.aws.amazon.com/lambda/latest/dg/python-context-object.html
 
+	
     Returns
     ------
     API Gateway Lambda Proxy Output Format: dict
@@ -33,10 +34,20 @@ def lambda_handler(event, context):
 
     #     raise e
 
+    file1 = open('myfile.txt', 'r') 
+    Lines = file1.readlines() 
+
+    aline
+
+    # Strips the newline character 
+    for line in Lines:
+       aline = line.strip()
+       count += 10
+
     return {
         "statusCode": 200,
         "body": json.dumps({
-            "message": "Hello SAM and GitHub Actions",
+            "message": aline,
             # "location": ip.text.replace("\n", "")
         }),
     }
