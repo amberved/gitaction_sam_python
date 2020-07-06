@@ -1,0 +1,9 @@
+xlrd
+aniso8601==8.0.0
+click==7.1.2
+pandas==1.0.3
+PyMySQL==0.9.3
+pytz==2020.1
+six==1.15.0
+Werkzeug==1.0.1
+git+https://github.com/HarshOza36/ifsc_api.git
